@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonCard Component must match the snapshot 1`] = `
+<div class="card">
+  <p data-testid="pokemon-name" class="card-title"></p>
+  <pokemon-image-stub imageid="1"></pokemon-image-stub>
+  <div class="container-descrition">
+    <div class="row align-items-center justify-content-center"></div>
+    <div class="col">
+      <p class="card-description"> Weight: <span data-testid="pokemon-weight"></span></p>
+      <p data-testid="pokemon-description" class="card-description"></p>
+      <!--v-if-->
+    </div>
+  </div>
+</div>
+`;

@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col container-home">
+          <img src="../assets/img/pikachu.png" alt="pokedex">
+          <router-link class="button-primary" :to="{ name: 'pokemon-list' }">Lista de Pokémons</router-link>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+<style lang="scss" scoped>
+.container-home {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
 
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
+  img {
+    width: 20em;
+    height: auto;
   }
 }
-</script>
+
+</style>

@@ -1,0 +1,56 @@
+// colors and typography
+$primary: #ff2f40;
+$secondary: rgb(95, 94, 94);
+$gray: #ccc;
+$white: #fff;
+$black: #000;
+$warning: #f2e640;
+$success: #7edb81;
+$info: #00bcd4;
+$danger: #f43675;
+
+// screens
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+// mixins
+@mixin grid($columns, $rows) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-template-rows: repeat($rows, 1fr);
+}
+
+@mixin button($bgColor, $bgColorHover, $color, $colorHover) {
+  padding: 10px;
+  border-radius: 14px;
+  background-color: $bgColor;
+  color: $color;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  &:hover {
+    background-color: $bgColorHover;
+    color: $colorHover;
+    transition: 0.3s;
+  }
+}
+
+@mixin badge($color, $bgColor) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 16px;
+  background-color: $bgColor;
+  color: $color;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px;
+  min-width: 40px;
+}
